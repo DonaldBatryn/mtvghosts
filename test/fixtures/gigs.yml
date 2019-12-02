@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  when: MyString
+  location: MyString
+  price: MyString
+  details: MyString
+  ages: MyString
+
+two:
+  when: MyString
+  location: MyString
+  price: MyString
+  details: MyString
+  ages: MyString
