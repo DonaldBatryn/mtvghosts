@@ -17,6 +17,10 @@ class Api::UsersController < ApplicationController
     render json: ['You have unsubscribed from our mailing list.']
   end
 
+  def index
+    @users = User.all
+  end
+
   def user_params
     params.require(:user).permit(:name, :email, :location)
   end
