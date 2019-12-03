@@ -22,7 +22,7 @@ const App = () => (
             <Route exact path="/admin" component={Forms} />
         </Switch>
         <Route path="/" component={Home} />
-        <Footer />
+        <AuthRoute exact path="/main" component={Footer} />
     </div>
 )
 

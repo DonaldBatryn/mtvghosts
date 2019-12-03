@@ -4,7 +4,7 @@ const Home = ({ props }) => {
 
     return (
         <div className="main-home-container">
-            <h1>This is the main content container of the site</h1>
+            <h1>mtvghosts fockin web app bih</h1>
         </div>
     )
 }

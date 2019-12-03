@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <div className="footer-container">
-            <Link to="/admin">Admin</Link>
+            <div className="footer-content">
+                <h5>MTVG 2020</h5>
+                <h5>site by Donnie Love</h5>
+                <Link to="/admin">Admin</Link>
+            </div>
         </div>
     )
 }

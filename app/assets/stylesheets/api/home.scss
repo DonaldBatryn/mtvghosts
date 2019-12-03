@@ -1,16 +1,22 @@
 
-// .app-div{
-//     width: 100vw;
-//     height: 
-// }
+.app-div{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 .main-home-container{
     width: 100vw;
     height: auto;
-    min-height: 1750px;
+    min-height: 150vh;
     background-color: pink;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    // margin-top: 120px;
+    padding-top: 120px;
 }

@@ -1,13 +1,12 @@
 
-
-const songsReducer = (state = {}, action) => {
+const adminReducer = (state = {}, action) => {
     Object.freeze(state)
     switch (action.type) {
-
+        
         default:
             return state;
 
     }
 }
 
-export default songsReducer;
+export default adminReducer;
