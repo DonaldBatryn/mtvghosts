@@ -9,7 +9,7 @@ class Admin < ApplicationRecord
 
     def self.find_by_credentials(name, password)
         admin = Admin.find_by(name: name)
-        admin && admin.is_password?(password) ? user : nil
+        admin && admin.is_password?(password) ? admin : nil
     end
 
     def is_password?(password)

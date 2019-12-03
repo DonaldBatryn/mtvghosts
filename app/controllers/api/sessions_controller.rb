@@ -1,7 +1,7 @@
 class Api::SessionsController < ApplicationController
   def create
     @admin = Admin.find_by_credentials(params[:admin][:name], params[:admin][:password])
-    
+  
     if @admin
       login(@admin)
       render json: @admin

@@ -29,7 +29,7 @@ export const login = (admin) => (dispatch) => {
 }
 
 export const createAdmin = admin => dispatch => (
-    SessionAPIUtil.registerAdmin(admin).then(admin => dispatch(receiveAdmin(admin)), err => dispatch(receiveErrors(err.responseJSON)))
+    SessionAPIUtil.registerAdmin(admin).then(admin => dispatch(receiveCurrentAdmin(admin)), err => dispatch(receiveErrors(err.responseJSON)))
 )
 
 export const logout = () => (dispatch) => {

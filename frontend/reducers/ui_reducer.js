@@ -1,10 +1,10 @@
-import { combineReducers } from 'redux';
+// import { combineReducers } from 'redux';
 // import modalReducer from './modal_reducer'
 
 
-const uiReducer = combineReducers({
-    // modal: modalReducer
+// const uiReducer = combineReducers({
+//     modal: modalReducer
 
-})
+// })
 
-export default uiReducer;
+// export default uiReducer;
