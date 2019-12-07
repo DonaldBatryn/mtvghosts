@@ -15,14 +15,12 @@ import AdminDashboard from './admin/dashboard_container';
 const App = () => (
     <div className="app-div">
         <NavBarContainer />
-    
         <Switch>
-        
             <ProtectedRoute exact path="/admin/home" component={AdminDashboard} />
             <Route exact path="/admin" component={Forms} />
         </Switch>
         <Route path="/" component={Home} />
-        <AuthRoute exact path="/main" component={Footer} />
+        <AuthRoute path="/" component={Footer} />
     </div>
 )
 

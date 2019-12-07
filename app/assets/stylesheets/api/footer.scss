@@ -1,11 +1,21 @@
+.outer-footer-container{
+    width: 100vw;
+    height: 60px;
+    border-bottom: 1px solid rgba(8, 146, 192, 0.3);
+    background-color: pink;
+    z-index: 11; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .footer-container{
     width: 90vw;
-    height: 75px;
+    height: 60px;
     border-bottom: 1px solid rgba(8, 146, 192, 0.3);
     background-color: rgb(92, 195, 255);
     z-index: 11;
-    
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
