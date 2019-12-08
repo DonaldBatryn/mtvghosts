@@ -35,6 +35,6 @@ class Api::GigsController < ApplicationController
   end
 
   def gig_params
-    params.require(:gig).permit(:when, :venue, :city_state, :price, :ages, :details)
+    params.require(:gig).permit(:when, :venue, :city_state, :price, :ages, :details, :imageUrl)
   end
 end

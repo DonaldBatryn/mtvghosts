@@ -28,6 +28,6 @@ class Api::AlbumsController < ApplicationController
   end
 
   def album_params
-    params.require(:album).permit(:name)
+    params.require(:album).permit(:name, :imageUrl)
   end
 end

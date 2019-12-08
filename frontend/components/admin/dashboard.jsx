@@ -7,6 +7,7 @@ class Dashboard extends React.Component {
 
     componentDidMount() {
         this.props.fetchGigs();
+        this.props.fetchAlbums();
     }
     render() {
         if (!this.props.gigs) return <div className="admin-dashboard-container">Loading</div>
