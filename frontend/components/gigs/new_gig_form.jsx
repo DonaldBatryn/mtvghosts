@@ -10,7 +10,8 @@ const msp = state => {
 
 const mdp = dispatch => {
     return ({
-        createGig: gig => dispatch(createGig(gig))
+        createGig: gig => dispatch(createGig(gig)),
+        fetchGigs: () => dispatch(fetchGigs())
     })
 }
 
@@ -36,14 +37,24 @@ class NewGigForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-
+        this.props.createGig(this.state).then(res => {
+            this.props.fetchGigs();
+            this.setState({
+                when: "",
+                venue: "",
+                city_state: "",
+                price: "",
+                details: "",
+                ages: ""
+            })
+        })
     }
 
     render() {
         return (
             <div className="new-gig-form-container">
                 <h3>Add New Gig</h3>
-                <form className="new-gig-form">
+                <form className="new-gig-form" onSubmit={this.handleSubmit}>
                    
                     <input type="text" value={this.state.when} placeholder="When" onChange={this.update('when')}/>
                     <input type="text" value={this.state.venue} placeholder="Venue" onChange={this.update('venue')}/>
@@ -52,7 +63,7 @@ class NewGigForm extends React.Component {
                     <input type="text" value={this.state.price} placeholder="Price" onChange={this.update('price')}/>
                     <input type="text" value={this.state.ages} placeholder="Ages" onChange={this.update('ages')}/>
                     <textarea type="text" value={this.state.details} placeholder="Details" onChange={this.update('details')}/>
-                    
+                    <input type="submit" value="Create Gig"/>
                 </form>
             </div>
         )

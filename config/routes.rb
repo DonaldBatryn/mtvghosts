@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     resources :albums, only: [:create, :update, :show, :index, :destroy]
     resources :gigs, only: [:create, :update, :show, :index, :destroy]
-    resources :songs, only: [:create, :update, :show, :destroy]
+    resources :songs, only: [:create, :update, :show, :index, :destroy]
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

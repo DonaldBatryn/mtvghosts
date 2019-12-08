@@ -21,6 +21,7 @@ class Api::GigsController < ApplicationController
 
   def index
     @gigs = Gig.all
+    # render "api/gigs/index"
   end
 
   def update
