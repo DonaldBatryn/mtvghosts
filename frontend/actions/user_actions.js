@@ -1,12 +1,12 @@
-import * as AdminUtil from '../utils/user_api_util';
+// import * as AdminUtil from '../utils/user_api_util';
 
-export const RECEIVE_ADMIN = 'RECEIVE_ADMIN';
+// export const RECEIVE_ADMIN = 'RECEIVE_ADMIN';
 
-const receiveAdmin = admin => ({
-    type: RECEIVE_ADMIN,
-    admin
-})
+// const receiveAdmin = admin => ({
+//     type: RECEIVE_ADMIN,
+//     admin
+// })
 
-export const createAdmin = admin => dispatch => (
-    AdminUtil.createAdmin(admin).then(admin => dispatch(receiveAdmin(admin)))
-)
+// export const createAdmin = admin => dispatch => (
+//     AdminUtil.createAdmin(admin).then(admin => dispatch(receiveAdmin(admin)))
+// )
