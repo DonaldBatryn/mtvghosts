@@ -1,5 +1,7 @@
 import React from 'react';
 import NewGigForm from '../gigs/new_gig_form';
+import NewAlbumForm from '../albums/new_album_form';
+
 
 class Dashboard extends React.Component {
 
@@ -14,7 +16,7 @@ class Dashboard extends React.Component {
             <div className="admin-dashboard-container">
                 
                 <NewGigForm />
-                <div className="new-album-form-container">New Album form temp div</div>
+                <NewAlbumForm />
                 <div className="new-song-form-container">New Song form temp div</div>
                 <div className="admin-item-index-container">
                     {gigList}

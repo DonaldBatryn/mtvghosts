@@ -45,7 +45,8 @@ class NewGigForm extends React.Component {
                 city_state: "",
                 price: "",
                 details: "",
-                ages: ""
+                ages: "",
+                imageUrl: ""
             })
         })
     }
@@ -59,10 +60,10 @@ class NewGigForm extends React.Component {
                     <input type="text" value={this.state.when} placeholder="When" onChange={this.update('when')}/>
                     <input type="text" value={this.state.venue} placeholder="Venue" onChange={this.update('venue')}/>
                     <input type="text" value={this.state.city_state} placeholder="City/State" onChange={this.update('city_state')}/>
-                
                     <input type="text" value={this.state.price} placeholder="Price" onChange={this.update('price')}/>
                     <input type="text" value={this.state.ages} placeholder="Ages" onChange={this.update('ages')}/>
                     <textarea type="text" value={this.state.details} placeholder="Details" onChange={this.update('details')}/>
+                    <input type="text" value={this.state.imageUrl} placeholder="Promo Image" onChange={this.update('imageUrl')}/>
                     <input type="submit" value="Create Gig"/>
                 </form>
             </div>

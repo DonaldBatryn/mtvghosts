@@ -24,12 +24,26 @@
     align-items: center;
 }
 
+.new-album-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .new-song-form-container{
     width: 33.33333%;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+.new-song-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
