@@ -5,6 +5,7 @@ const gigsReducer = (state = {}, action) => {
     Object.freeze(state)
     switch (action.type) {
         case RECEIVE_GIGS:
+            
             return action.gigs;
         case RECEIVE_GIG:
             return Object.assign({}, state, { [action.gig.id]: action.gig });

@@ -4,10 +4,13 @@ export const RECEIVE_GIGS = 'RECEIVE_GIGS';
 export const RECEIVE_GIG = 'RECEIVE_GIG';
 export const REMOVE_GIG = 'REMOVE_GIG';
 
-const receiveGigs = gigs => ({
-    type: RECEIVE_GIGS,
-    gigs
-})
+const receiveGigs = gigs => {
+    // debugger
+    return ({
+        type: RECEIVE_GIGS,
+        gigs
+    })
+}
 
 const receiveGig = gig => ({
     type: RECEIVE_GIG,

@@ -3,8 +3,9 @@ import Dashboard from './dashboard';
 import { fetchGigs } from '../../actions/gig_actions';
 
 const msp = state => {
-    return ({
 
+    return ({
+        gigs: Object.keys(state.entities.gigs).map(id => state.entities.gigs[id])
     })
 }
 
