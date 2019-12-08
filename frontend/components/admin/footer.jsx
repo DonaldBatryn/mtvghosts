@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="footer-content">
                     <h5>MTVG 2020</h5>
                     <h5>site by Donnie Love</h5>
-                    <Link to="/admin">Admin</Link>
+                    <Link to="/admin/home">Admin</Link>
                 </div>
             </div>
         </div>
