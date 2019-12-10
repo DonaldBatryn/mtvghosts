@@ -25,9 +25,14 @@ class Api::AlbumsController < ApplicationController
 
   def update
     @album = Album.find(params[:id])
+    if @album.update_attributes(album_params)
+      render json: @album
+    else
+      render json: @album.errors.full_messages, status: 422
+    end
   end
 
   def album_params
-    params.require(:album).permit(:name, :imageUrl)
+    params.require(:album).permit(:name, :imageUrl, :year)
   end
 end

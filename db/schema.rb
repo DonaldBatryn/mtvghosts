@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_08_055927) do
+ActiveRecord::Schema.define(version: 2019_12_10_002308) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2019_12_08_055927) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "imageUrl"
+    t.string "year"
     t.index ["name"], name: "index_albums_on_name", unique: true
   end
 
@@ -52,6 +53,7 @@ ActiveRecord::Schema.define(version: 2019_12_08_055927) do
     t.datetime "updated_at", null: false
     t.integer "album_id"
     t.string "audioUrl"
+    t.string "duration"
     t.index ["title"], name: "index_songs_on_title", unique: true
   end
 

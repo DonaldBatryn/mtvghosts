@@ -24,7 +24,8 @@ class NewGigForm extends React.Component {
             city_state: "",
             price: "",
             details: "",
-            ages: ""
+            ages: "",
+            imageUrl: ""
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }

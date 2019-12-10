@@ -20,6 +20,7 @@ class NewAlbumForm extends React.Component {
         super(props);
         this.state = {
             name: "",
+            year: "",
             imageUrl: ""
         };
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -37,6 +38,7 @@ class NewAlbumForm extends React.Component {
             this.props.fetchAlbums();
             this.setState({
                 name: "",
+                year: "",
                 imageUrl: ""
             })
         })
@@ -49,6 +51,7 @@ class NewAlbumForm extends React.Component {
                 <form className="new-album-form" onSubmit={this.handleSubmit}>
                    
                     <input type="text" value={this.state.name} placeholder="Name" onChange={this.update('name')}/>
+                    <input type="text" value={this.state.year} placeholder="Year" onChange={this.update('year')}/>
                     <input type="text" value={this.state.imageUrl} placeholder="Album Art" onChange={this.update('imageUrl')}/>
                     
                     <input type="submit" value="Create Album"/>

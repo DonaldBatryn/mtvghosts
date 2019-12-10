@@ -1,0 +1,70 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Page Layout Test</title>
+    <style>
+        div {
+            display: block;
+            padding: 10px;
+        }
+
+        #container {
+            width: 800px;
+        }
+
+        #header {
+            height: 100px;
+            background-color: #3366aa;
+        }
+
+        #columnOne {
+            height: 500px;
+            width: 500px;
+            float: left;
+            background-color: #aabbbb;
+        }
+
+        #columnTwo {
+            height: 500px;
+            width: 260px;
+            float: right;
+            background-color: #6699aa;
+        }
+
+        #footer {
+            clear: both;
+            height: 100px;
+            background-color: #778877;
+        }
+
+        #box {
+            border: 1px solid #66ccdd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="header">Header</div>
+        <div id="columnOne">
+            <h1>Main Page Title</h1>
+        </div>
+        <div id="columnTwo">
+            <h1>Sidebar Title</h1>
+            <ul>
+                <p><b>List Title</b></p>
+                <li id="box">Item</li>
+                <li id="box">Item</li>
+                <li id="box">Item</lii>
+                <li id="box">Item</li>
+            </ul>
+        </div>
+        <div id="footer">Footer</div>
+    </div>
+
+</body>
+
+</html>

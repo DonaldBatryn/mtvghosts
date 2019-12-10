@@ -23,11 +23,15 @@ class Api::SongsController < ApplicationController
     end
   end
 
+  def index
+    @songs = Song.all
+  end
+
   def show
     @song = Song.find(params[:id])
   end
 
   def song_params
-    params.require(:song).permit(:title, :audioUrl)
+    params.require(:song).permit(:title, :audioUrl, :duration)
   end
 end
