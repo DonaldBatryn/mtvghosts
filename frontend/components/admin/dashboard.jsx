@@ -24,7 +24,10 @@ class Dashboard extends React.Component {
                         </div>
                     </div>
         })
+
+
         let songList = this.props.songs.map(song => <div key={song.id}>{song.title}</div>)
+        
         return (
             <div className="admin-dashboard-container">
                 
