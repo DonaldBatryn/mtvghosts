@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import Dashboard from './dashboard';
-import { fetchGigs } from '../../actions/gig_actions';
-import { fetchAlbums } from '../../actions/album_actions';
-import { fetchSongs } from '../../actions/song_actions';
+import { fetchGigs, deleteGig, updateGig } from '../../actions/gig_actions';
+import { fetchAlbums, deleteAlbum, updateAlbum } from '../../actions/album_actions';
+import { fetchSongs, deleteSong, updateSong } from '../../actions/song_actions';
 
 const msp = state => {
 
@@ -16,8 +16,15 @@ const msp = state => {
 const mdp = dispatch => {
     return ({
         fetchGigs: () => dispatch(fetchGigs()),
+        deleteGig: id => dispatch(deleteGig(id)),
+        updateGig: (gig, gigId) => dispatch(updateGig(gig, gigId)),
         fetchAlbums: () => dispatch(fetchAlbums()),
-        fetchSongs: () => dispatch(fetchSongs())
+        deleteAlbum: id => dispatch(deleteAlbum(id)),
+        updateAlbum: (album, albumId) => dispatch(updateAlbum(album, albumId)),
+        fetchSongs: () => dispatch(fetchSongs()),
+        deleteSong: id => dispatch(deleteSong(id)),
+        updateSong: (song, songId) => dispatch(updateSong(song, songId)),
+
     })
 }
 

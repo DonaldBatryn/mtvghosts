@@ -31,8 +31,8 @@ export const createAlbum = (album) => dispatch => (
     AlbumAPIUtil.createAlbum(album).then(album => dispatch(receiveAlbum(album)))
 )
 
-export const updateAlbum = (album) => dispatch => (
-    AlbumAPIUtil.updateAlbum(album).then(album => dispatch(receiveAlbum(album)))
+export const updateAlbum = (album, albumId) => dispatch => (
+    AlbumAPIUtil.updateAlbum(album, albumId).then(album => dispatch(receiveAlbum(album)))
 )
 
 export const deleteAlbum = (id) => dispatch => (

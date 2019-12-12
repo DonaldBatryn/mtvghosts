@@ -27,6 +27,7 @@ class Api::GigsController < ApplicationController
 
   def update
     @gig = Gig.find(params[:id])
+    debugger
     if @gig.update_attributes(gig_params)
       render json: @gig
     else

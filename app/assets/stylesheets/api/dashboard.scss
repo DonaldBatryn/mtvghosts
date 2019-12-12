@@ -1,10 +1,11 @@
 
 .new-gig-form-container{
+    padding-top: 20px;
     width: 33.33333%;
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -16,11 +17,12 @@
 }
 
 .new-album-form-container{
+    padding-top: 20px;
     width: 33.33333%;
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -32,11 +34,12 @@
 }
 
 .new-song-form-container{
+    padding-top: 20px;
     width: 33.33333%;
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -60,6 +63,36 @@
 
 
 .admin-album-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.album-li-top{
+    padding: 0 15px 0 15px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    
+}
+
+
+.admin-song-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.song-li-top{
     padding: 0 15px 0 15px;
     width: 100%;
     height: 50px;
@@ -71,11 +104,33 @@
     border-bottom: 1px solid gray;
 }
 
-.album-item-right{
-    width: 45%;
-    height: 100%;
+.admin-gig-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.gig-li-top{
+    padding: 0 15px 0 15px;
+    width: 100%;
+    height: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+
+.edit-dropdown{
+    padding: 0 15px 0 15px;
+    height: 150px;
+    width: 100%;    
+}
+
+.hidden{
+    display: none;
 }

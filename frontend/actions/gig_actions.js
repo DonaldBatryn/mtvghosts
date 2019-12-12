@@ -34,8 +34,8 @@ export const createGig = (gig) => dispatch => (
     GigAPIUtil.createGig(gig).then(gig => dispatch(receiveGig(gig)))
 )
 
-export const updateGig = (gig) => dispatch => (
-    GigAPIUtil.updateGig(gig).then(gig => dispatch(receiveGig(gig)))
+export const updateGig = (gig, gigId) => dispatch => (
+    GigAPIUtil.updateGig(gig, gigId).then(gig => dispatch(receiveGig(gig)))
 )
 
 export const deleteGig = (id) => dispatch => (

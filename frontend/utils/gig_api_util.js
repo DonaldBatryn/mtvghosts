@@ -21,10 +21,10 @@ export const createGig = gig => (
     })
 )
 
-export const updateGig = gig => (
+export const updateGig = (gig, gigId) => (
     $.ajax({
         method: 'PATCH',
-        url: `/api/gigs/${gig.id}`,
+        url: `/api/gigs/${gigId}`,
         data: { gig }
     })
 )

@@ -49,7 +49,7 @@ class NewSongForm extends React.Component {
     render() {
         return (
             <div className="new-song-form-container">
-                <h3>Add New Album</h3>
+                <h3>Add New Song</h3>
                 <form className="new-song-form" onSubmit={this.handleSubmit}>
 
                     <input type="text" value={this.state.title} placeholder="Title" onChange={this.update('title')} />
