@@ -1,12 +1,19 @@
-// import * as AdminUtil from '../utils/user_api_util';
+import * as UserAPIUtil from '../utils/user_api_util';
 
-// export const RECEIVE_ADMIN = 'RECEIVE_ADMIN';
+export const RECEIVE_USER = 'RECEIVE_USER';
+// export const REMOVE_USER = 'REMOVE_USER';
 
-// const receiveAdmin = admin => ({
-//     type: RECEIVE_ADMIN,
-//     admin
-// })
+const receiveUser = user => ({
+    type: RECEIVE_USER,
+    user
+})
 
-// export const createAdmin = admin => dispatch => (
-//     AdminUtil.createAdmin(admin).then(admin => dispatch(receiveAdmin(admin)))
+
+
+export const createUser = user => dispatch => (
+    UserAPIUtil.createUser(user).then(user => dispatch(receiveUser(user)))
+)
+
+// export const deleteUser = id => dispatch => (
+//     UserAPIUtil.deleteUser(id).then(user => dispatch(removeUser(user)))
 // )

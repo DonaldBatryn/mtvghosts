@@ -139,8 +139,16 @@ class Dashboard extends React.Component {
                 </div>
                 <div id={`gig-${gig.id}`} className="edit-dropdown hidden">
 
-                    <h4>ID:{gig.id}</h4>
-                    <h4>Update (fill in all fields)</h4>
+                    <h4>ID_{gig.id}</h4>
+                    <h4>when_{gig.when}</h4>
+                    <h4>venue_{gig.venue}</h4>
+                    <h4>city_state_{gig.city_state}</h4>
+                    <h4>price_{gig.price}</h4>
+                    <h4>ages_{gig.ages}</h4>
+                    <h4>details_{gig.details}</h4>
+                    <img className="admin-list-image" src={gig.imageUrl} alt="no image"/>
+
+                    <h4 className="update-border">Update (fill in all fields)</h4>
                     <form onSubmit={(e) => this.handleGigUpdate(e, gig.id)}>
                         <input type="text" placeholder="new when" onChange={this.update('when')} value={this.state.when}/>
                         <input type="text" placeholder="new venue" onChange={this.update('venue')} value={this.state.venue}/>
@@ -169,8 +177,12 @@ class Dashboard extends React.Component {
                         </div>
                         <div id={`album-${album.id}`} className="edit-dropdown hidden">
 
-                            <h4>ID:{album.id}</h4>
-                            <h4>Update (fill in all fields)</h4>
+                            <h4>ID_{album.id}</h4>
+                            <h4>name_{album.name}</h4>
+                            <h4>year_{album.year}</h4>
+                            <img className="admin-list-image" src={album.imageUrl} alt="no image"/>
+
+                            <h4 className="update-border">Update (fill in all fields)</h4>
                             <form onSubmit={(e) => this.handleAlbumUpdate(e, album.id)}>
                                 <input type="text" placeholder="new name" onChange={this.update('name')} value={this.state.name} />
                                 <input type="text" placeholder="new year" onChange={this.update('year')} value={this.state.year} />
@@ -197,7 +209,11 @@ class Dashboard extends React.Component {
                         </div>
                         <div id={`song-${song.id}`} className="edit-dropdown hidden">
                             <h4>ID:{song.id}</h4>
-                            <h4>Update (fill in all fields)</h4>
+                            <h4>title:{song.title}</h4>
+                            <h4>duration:{song.duration}</h4>
+                            <h4>albumId:{song.album_id}</h4>
+                            <audio src={song.audioUrl} controls></audio>
+                            <h4 className="update-border">Update (fill in all fields)</h4>
                             <form onSubmit={(e) => this.handleSongUpdate(e, song.id)}>
                                 <input type="text" placeholder="new title" onChange={this.update('title')} value={this.state.title} />
                                 <input type="text" placeholder="new duration" onChange={this.update('duration')} value={this.state.duration} />

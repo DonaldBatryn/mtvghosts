@@ -127,10 +127,20 @@
 
 .edit-dropdown{
     padding: 0 15px 0 15px;
-    height: 150px;
+    min-height: 150px;
+    height: auto;
     width: 100%;    
 }
 
 .hidden{
     display: none;
+}
+
+.admin-list-image{
+    width: 95%;
+    height: auto;
+}
+
+.update-border{
+    border-top: 5px solid gray;
 }
