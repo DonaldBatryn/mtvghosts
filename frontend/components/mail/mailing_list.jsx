@@ -51,9 +51,9 @@ class MailingList extends React.Component {
             <div className="mailing-list-container">
                 {!this.state.submitSuccess && (
                     <div className="mailing-header-txt-box">
-                        <h1>:Join our mailing list:</h1>
-                        <h3>:for MTVG perks:</h3>
-                        <h3>:and updates:</h3>
+                        <h1>Join our mailing list;</h1>
+                        <h3>for MTVG perks;</h3>
+                        <h3>and updates;</h3>
                     </div>
                 )}
                 {this.state.submitSuccess && (

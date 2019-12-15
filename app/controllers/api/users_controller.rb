@@ -5,6 +5,7 @@ class Api::UsersController < ApplicationController
 
     if @user.save
       # mailer stuff here, display thank you/signup success
+      UserMailer.with(user: @user).welcome_email.deliver_now
       render json: @user
     else
       render json: @user.errors.full_messages, status: 422
@@ -25,3 +26,4 @@ class Api::UsersController < ApplicationController
     params.require(:user).permit(:name, :email, :location)
   end
 end
+
